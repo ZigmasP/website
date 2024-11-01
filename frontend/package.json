@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ZigmasP.github.io/website",
+  "homepage": "https://zigmasp.github.io/website",
 
   "scripts": {
     "dev": "vite",
