@@ -17,5 +17,8 @@
                 "deploy": "gh-pages -d build",
               }
 
+- Paleidžiu npm run deploy
+  * susikuria dist katalogas kuriame yra assets, index.html
+
 
 
