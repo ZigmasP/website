@@ -46,8 +46,7 @@ body {
 .contact-box {
   border: 4px double black;
   border-radius: 50px;
-  padding: 1rem;
-  margin-top: 0.5rem;
+  padding: 0.5rem;
   align-items: center;
   display: inline-block;
   animation: slide-in 1s ease-in-out;
@@ -64,20 +63,23 @@ body {
 /* Pakeitimai vidutinio dydžio ekranams */
 @media only screen and (min-width: 768px) {
   .hero {
-    margin-top: 100px; /* Didesnis viršutinis tarpas */
+    margin-top: 50px; /* Didesnis viršutinis tarpas */
     h1 {
       font-size: 2.5rem; /* Padidintas dydis didesniems ekranams */
     }
 
     p {
-      font-size: 2rem; /* Padidintas dydis didesniems ekranams */
+      margin-top: 20px;
+      font-size: 1.5rem; /* Padidintas dydis didesniems ekranams */
     }
   }
 
   .contact-box {
     min-width: 300px; /* Didesnis minimalus plotis */
-    padding: 1.5rem; /* Didesnė vidinė paraštė */
+    padding: 0.5rem; /* Didesnė vidinė paraštė */
     p {
+      margin: 0;
+      text-align: center;
       font-size: 1.5rem; /* Padidintas dydis */
     }
   }
@@ -86,25 +88,26 @@ body {
 /* Pakeitimai platesniems ekranams (darbalaukiams) */
 @media only screen and (min-width: 1024px) {
   .hero {
-    margin-top: 150px; /* Dar didesnis tarpas */
-    flex-direction: row; /* Elementai išdėstyti vienoje eilutėje */
-    gap: 2rem; /* Atstumas tarp elementų */
+    margin-top: 30px; /* Dar didesnis tarpas */
+    flex-direction: column; /* Elementai išdėstyti vienoje eilutėje */
+    gap: 1rem; /* Atstumas tarp elementų */
     h1 {
       font-size: 3rem; /* Padidintas dydis platesniems ekranams */
-      text-align: left; /* Kairinis lygiavimas */
+      text-align: center; /* Kairinis lygiavimas */
     }
 
     p {
+      margin: 0;
       font-size: 2.2rem; /* Padidintas dydis platesniems ekranams */
-      text-align: left; /* Kairinis lygiavimas */
+      text-align: center; /* Kairinis lygiavimas */
     }
   }
 
   .contact-box {
     min-width: 400px; /* Platesnis minimalus plotis */
-    padding: 2rem; /* Didesnė vidinė paraštė */
+    padding: 0.5rem; /* Didesnė vidinė paraštė */
     margin-top: 0; /* Pašalinta papildoma viršutinė paraštė */
-    align-self: flex-start; /* Pritaikymas prie viršutinio hero elemento */
+    align-self: center; /* Pritaikymas prie viršutinio hero elemento */
     p {
       font-size: 1.8rem; /* Padidintas šrifto dydis */
     }

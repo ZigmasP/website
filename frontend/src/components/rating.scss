@@ -3,7 +3,7 @@
     font-family: var(--font-family);
     font-size: 1rem; /* Sumažintas šrifto dydis mobiliesiems */
     position: fixed;
-    bottom: 100px; /* Sumažinta pozicija mobiliesiems */
+    bottom: 115px; /* Sumažinta pozicija mobiliesiems */
     background-color: var(--kreminė);
     padding: 0.8rem; /* Sumažinta vidinė paraštė mobiliesiems */
     width: 90%; /* Užima beveik visą plotį mobiliajame */
@@ -41,7 +41,7 @@
   @media only screen and (min-width: 768px) {
     .average-rating {
       font-size: 1.5rem; /* Padidintas šrifto dydis */
-      bottom: 80px; /* Pakelta aukščiau platesniems ekranams */
+      bottom: 115px; /* Pakelta aukščiau platesniems ekranams */
       padding: 1rem; /* Didesnė vidinė paraštė */
       width: auto; /* Automatinis plotis platesniems ekranams */
       left: auto; /* Pašalinamas centravimas platesniems ekranams */
@@ -62,7 +62,7 @@
   @media only screen and (min-width: 1024px) {
     .average-rating {
       font-size: 1.8rem; /* Dar didesnis šrifto dydis */
-      bottom: 100px; /* Pakelta dar aukščiau platesniems ekranams */
+      bottom: 120px; /* Pakelta dar aukščiau platesniems ekranams */
       padding: 1.5rem; /* Didesnė vidinė paraštė */
     }
   

@@ -1,0 +1,77 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px; /* Minimali plotis */
+    height: auto; /* Aukštis prisitaiko pagal turinį */
+    padding: 10px 0; /* Vidinės paraštės mažiems ekranams */
+    justify-content: center;
+    align-items: center;
+    background-color: var(--kreminė);
+    position: fixed; /* Tvirtinama apačioje */
+    bottom: 0;
+    left: 0;
+    z-index: 10; /* Užtikrina, kad footer'is būtų virš kitų elementų */
+  
+    p {
+      font-size: 1rem; /* Mažesnis šriftas mobiliesiems */
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      margin: 5px 0; /* Sumažinta viršutinė ir apatinė paraštė */
+    }
+  
+    .icon-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 5px; /* Mažesnis tarpas virš ikonų */
+      gap: 8px; /* Mažesnis tarpas tarp ikonų mobiliesiems */
+      justify-content: center;
+  
+      .icon {
+        font-size: 1.2rem; /* Mažesnis ikonų dydis mobiliesiems */
+        color: black; /* Ikonų spalva */
+      }
+    }
+  }
+  
+  /* Vidutinio dydžio ekranai */
+  @media only screen and (min-width: 768px) {
+    .footer-container {
+      padding: 15px 0; /* Didesnės vidinės paraštės */
+      height: 80px; /* Fiksuotas aukštis platesniems ekranams */
+  
+      p {
+        font-size: 1.2rem; /* Šiek tiek didesnis šriftas */
+      }
+  
+      .icon-container {
+        margin-top: 10px; /* Didesnis tarpas virš ikonų */
+        gap: 12px; /* Platesnis tarpas tarp ikonų */
+        
+        .icon {
+          font-size: 1.5rem; /* Didesnis ikonų dydis */
+        }
+      }
+    }
+  }
+  
+  /* Platesni ekranai */
+  @media only screen and (min-width: 1024px) {
+    .footer-container {
+      padding: 20px 0; /* Didesnės vidinės paraštės platesniems ekranams */
+      height: 100px; /* Aukštesnis footer'is platesniems ekranams */
+  
+      p {
+        font-size: 1.4rem; /* Didžiausias šrifto dydis */
+      }
+  
+      .icon-container {
+        gap: 15px; /* Dar didesnis tarpas tarp ikonų */
+  
+        .icon {
+          font-size: 2rem; /* Didžiausios ikonos */
+        }
+      }
+    }
+  }
+  
