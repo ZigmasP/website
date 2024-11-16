@@ -1,0 +1,23 @@
+:root {
+  --kreminė: #f6e7d7;
+  --kapučino: #c3b091;
+  --smėlio: #d2b48c;
+  --font-family: "Montserrat", sans-serif;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--kreminė);
+  min-width: 320px;
+}
