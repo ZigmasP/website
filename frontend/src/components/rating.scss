@@ -1,0 +1,79 @@
+.average-rating {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 1rem; /* Sumažintas šrifto dydis mobiliesiems */
+    position: fixed;
+    bottom: 100px; /* Sumažinta pozicija mobiliesiems */
+    background-color: var(--kreminė);
+    padding: 0.8rem; /* Sumažinta vidinė paraštė mobiliesiems */
+    width: 90%; /* Užima beveik visą plotį mobiliajame */
+    left: 5%; /* Centruojama horizontaliai */
+  
+    .reviews-link {
+      color: inherit;
+      text-decoration: none;
+  
+      &:hover {
+        color: #ffc107;
+      }
+    }
+  
+    .stars {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem; /* Atstumas tarp žvaigždučių mobiliesiems */
+    }
+  
+    .filled {
+      color: #ffc107;
+      -webkit-text-stroke: 2px solid black; /* Plonesnis kontūras mobiliesiems */
+      font-size: 1.2rem; /* Mažesnė žvaigždučių piktograma mobiliesiems */
+    }
+  
+    .empty {
+      color: grey;
+      -webkit-text-stroke: 2px solid black; /* Plonesnis kontūras mobiliesiems */
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Vidutinio dydžio ekranai */
+  @media only screen and (min-width: 768px) {
+    .average-rating {
+      font-size: 1.5rem; /* Padidintas šrifto dydis */
+      bottom: 80px; /* Pakelta aukščiau platesniems ekranams */
+      padding: 1rem; /* Didesnė vidinė paraštė */
+      width: auto; /* Automatinis plotis platesniems ekranams */
+      left: auto; /* Pašalinamas centravimas platesniems ekranams */
+  
+      .stars {
+        gap: 1rem; /* Didesnis atstumas tarp žvaigždučių */
+      }
+  
+      .filled,
+      .empty {
+        font-size: 1.5rem; /* Didesnė žvaigždučių piktograma */
+        -webkit-text-stroke: 3px solid black; /* Storesnis kontūras platesniems ekranams */
+      }
+    }
+  }
+  
+  /* Platesni ekranai */
+  @media only screen and (min-width: 1024px) {
+    .average-rating {
+      font-size: 1.8rem; /* Dar didesnis šrifto dydis */
+      bottom: 100px; /* Pakelta dar aukščiau platesniems ekranams */
+      padding: 1.5rem; /* Didesnė vidinė paraštė */
+    }
+  
+    .stars {
+      gap: 1.2rem; /* Didesnis atstumas tarp žvaigždučių */
+    }
+  
+    .filled,
+    .empty {
+      font-size: 2rem; /* Didžiausia žvaigždučių piktograma */
+      -webkit-text-stroke: 4px solid black; /* Dar storesnis kontūras */
+    }
+  }
+  

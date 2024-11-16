@@ -21,3 +21,92 @@ body {
   background-color: var(--kreminė);
   min-width: 320px;
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+
+  h1 {
+    font-family: var(--font-family);
+    font-size: 2rem; /* Sumažintas dydis mobiliesiems */
+    text-align: center; /* Centruotas tekstas */
+  }
+
+  p {
+    font-family: var(--font-family);
+    font-size: 1.2rem; /* Sumažintas dydis mobiliesiems */
+    text-align: center; /* Centruotas tekstas */
+  }
+}
+
+.contact-box {
+  border: 4px double black;
+  border-radius: 50px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  align-items: center;
+  display: inline-block;
+  animation: slide-in 1s ease-in-out;
+  min-width: 250px; /* Sumažintas minimalus plotis mobiliesiems */
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 1.2rem; /* Sumažintas dydis mobiliesiems */
+  }
+}
+
+/* Pakeitimai vidutinio dydžio ekranams */
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin-top: 100px; /* Didesnis viršutinis tarpas */
+    h1 {
+      font-size: 2.5rem; /* Padidintas dydis didesniems ekranams */
+    }
+
+    p {
+      font-size: 2rem; /* Padidintas dydis didesniems ekranams */
+    }
+  }
+
+  .contact-box {
+    min-width: 300px; /* Didesnis minimalus plotis */
+    padding: 1.5rem; /* Didesnė vidinė paraštė */
+    p {
+      font-size: 1.5rem; /* Padidintas dydis */
+    }
+  }
+}
+
+/* Pakeitimai platesniems ekranams (darbalaukiams) */
+@media only screen and (min-width: 1024px) {
+  .hero {
+    margin-top: 150px; /* Dar didesnis tarpas */
+    flex-direction: row; /* Elementai išdėstyti vienoje eilutėje */
+    gap: 2rem; /* Atstumas tarp elementų */
+    h1 {
+      font-size: 3rem; /* Padidintas dydis platesniems ekranams */
+      text-align: left; /* Kairinis lygiavimas */
+    }
+
+    p {
+      font-size: 2.2rem; /* Padidintas dydis platesniems ekranams */
+      text-align: left; /* Kairinis lygiavimas */
+    }
+  }
+
+  .contact-box {
+    min-width: 400px; /* Platesnis minimalus plotis */
+    padding: 2rem; /* Didesnė vidinė paraštė */
+    margin-top: 0; /* Pašalinta papildoma viršutinė paraštė */
+    align-self: flex-start; /* Pritaikymas prie viršutinio hero elemento */
+    p {
+      font-size: 1.8rem; /* Padidintas šrifto dydis */
+    }
+  }
+}
