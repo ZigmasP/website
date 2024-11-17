@@ -115,6 +115,141 @@ body {
   }
 }
 
+/* Pagrindinis konteineris (mobile-first) */
+.about-services-container {
+  display: flex;
+  flex-direction: column; /* Pakeista į stulpelį mažiems ekranams */
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  min-width: 320px;
+}
+
+/* Apie mane skyrius */
+.about-container {
+  display: flex;
+  flex-direction: column; /* Pritaikyta mobiliesiems */
+  margin-top: 2rem;
+  min-width: 300px;
+  width: 100%;
+}
+
+.about-container p {
+  text-align: justify;
+  text-indent: 25px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  margin-left: 15px;
+  min-width: 250px;
+}
+
+/* Paslaugų skyrius */
+.services-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  text-align: center;
+  color: white;
+  min-width: 300px;
+  width: 100%;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.services-container h2 {
+  font-size: 2rem; /* Mažesnis fontas mobiliesiems */
+  font-family: var(--font-family);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 1rem 0;
+}
+
+.services-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-container li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 1.2rem; /* Mažesnis šrifto dydis mobiliesiems */
+  min-width: 200px;
+}
+
+.service-icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  color: #f0db4f;
+}
+
+/* Medijos užklausos vidutinio dydžio ekranams (planšetės) */
+@media only screen and (min-width: 768px) {
+  .about-services-container {
+    flex-direction: row; /* Horizontaliai išdėstoma */
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .about-container {
+    width: 50%;
+  }
+
+  .services-container {
+    width: 50%;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .services-container h2 {
+    font-size: 2.5rem; /* Didinamas fontas planšetėms */
+  }
+
+  .services-container li {
+    font-size: 1.5rem; /* Didinamas šrifto dydis */
+  }
+}
+
+/* Medijos užklausos didesniems ekranams (nešiojami kompiuteriai, darbalaukiai) */
+@media only screen and (min-width: 1024px) {
+  .about-services-container {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .about-container {
+    width: 50%;
+  }
+
+  .services-container {
+    width: 50%;
+    text-align: left;
+  }
+
+  .services-container h2 {
+    font-size: 3rem; /* Didesnis fontas dideliems ekranams */
+  }
+
+  .services-container li {
+    font-size: 1.7rem; /* Didesnis šrifto dydis */
+  }
+}
+
 .contacts-page {
   background-color: var(--kreminė);
   display: flex;
