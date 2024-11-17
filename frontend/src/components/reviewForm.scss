@@ -1,0 +1,182 @@
+.review-form {
+    width: 280px; /* Fiksuotas plotis */
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family);
+  
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0.5rem;
+  
+      label {
+        font-family: var(--font-family);
+        font-size: 0.85rem; /* Mažesnis šrifto dydis mobiliesiems */
+        color: #666;
+        margin-bottom: 0.2rem;
+      }
+  
+      input[type="text"],
+      select,
+      textarea {
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: var(--font-family);
+        font-size: 0.9rem; /* Mažesnis šrifto dydis mobiliesiems */
+        background-color: #fff;
+        transition: border-color 0.2s ease;
+  
+        &:focus {
+          outline: none;
+          border-color: #ffc107;
+          box-shadow: 0 0 5px rgba(255, 193, 7, 0.3);
+        }
+      }
+  
+      textarea {
+        resize: vertical;
+        min-height: 40px;
+      }
+    }
+  
+    .rating-group {
+      display: flex;
+      gap: 0.5rem; /* Sumažintas tarpas tarp burbulų */
+      justify-content: center;
+  
+      .rating-bubble {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+  
+        input[type="radio"] {
+          display: none;
+        }
+  
+        span {
+          width: 30px;
+          height: 30px; /* Sumažintas burbulo dydis mobiliesiems */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: #ddd;
+          color: #333;
+          font-family: var(--font-family);
+          font-size: 0.9rem; /* Mažesnis šrifto dydis mobiliesiems */
+          transition: background-color 0.3s, color 0.3s;
+  
+          &:hover {
+            background-color: #ffc107;
+          }
+        }
+  
+        input[type="radio"]:checked + span {
+          background-color: #ffc107;
+          color: #fff;
+        }
+      }
+    }
+  
+    .submit-button {
+      width: 100%;
+      padding: 0.5rem;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 1rem;
+      font-family: var(--font-family);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+  
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+  
+      &:disabled {
+        background-color: #ddd;
+        cursor: not-allowed;
+      }
+    }
+  }
+  
+  /* Medijos užklausos, kad išlaikytume tą patį plotį ekranuose virš 768px */
+  @media only screen and (min-width: 768px) {
+    .review-form {
+      width: 280px; /* Išlaikyti fiksuotą plotį */
+      padding: 1rem;
+  
+      .form-group {
+        label {
+          font-size: 1rem;
+        }
+  
+        input[type="text"],
+        select,
+        textarea {
+          font-size: 1rem;
+          padding: 0.5rem;
+        }
+      }
+  
+      .rating-group {
+        gap: 1rem;
+  
+        .rating-bubble span {
+          width: 30px;
+          height: 30px;
+          font-size: 1rem;
+        }
+      }
+  
+      .submit-button {
+        font-size: 1rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+  
+  /* Medijos užklausos platesniems ekranams */
+  @media only screen and (min-width: 1024px) {
+    .review-form {
+      width: 280px; /* Fiksuotas plotis ir čia */
+      padding: 2rem;
+  
+      .form-group {
+        label {
+          font-size: 1rem;
+        }
+  
+        input[type="text"],
+        select,
+        textarea {
+          font-size: 1rem;
+        }
+      }
+  
+      .rating-group {
+        .rating-bubble span {
+          width: 35px;
+          height: 35px;
+          font-size: 1rem;
+        }
+      }
+  
+      .submit-button {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin-top: 5px;
+      }
+    }
+  }
+  

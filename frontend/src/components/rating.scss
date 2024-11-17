@@ -41,7 +41,7 @@
   @media only screen and (min-width: 768px) {
     .average-rating {
       font-size: 1.5rem; /* Padidintas šrifto dydis */
-      bottom: 115px; /* Pakelta aukščiau platesniems ekranams */
+      bottom: 110px; /* Pakelta aukščiau platesniems ekranams */
       padding: 1rem; /* Didesnė vidinė paraštė */
       width: auto; /* Automatinis plotis platesniems ekranams */
       left: auto; /* Pašalinamas centravimas platesniems ekranams */
@@ -62,7 +62,7 @@
   @media only screen and (min-width: 1024px) {
     .average-rating {
       font-size: 1.8rem; /* Dar didesnis šrifto dydis */
-      bottom: 120px; /* Pakelta dar aukščiau platesniems ekranams */
+      bottom: 110px; /* Pakelta dar aukščiau platesniems ekranams */
       padding: 1.5rem; /* Didesnė vidinė paraštė */
     }
   
