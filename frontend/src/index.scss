@@ -393,8 +393,6 @@ body {
   }
 }
 
-
-
 .reviews-container {
   text-align: center;
   padding: 1rem; /* Mažesnės paraštės mobiliesiems */
@@ -429,7 +427,7 @@ body {
   margin: 1rem 0;
   border-bottom: 1px solid #ccc;
   padding-bottom: 1rem;
-  background-color: #fff; /* Šviesus fonas elementams */
+  background-color: transparent; /* Šviesus fonas elementams */
   border-radius: 8px; /* Apvalinti kampai */
   padding: 1rem;
 
@@ -476,23 +474,4 @@ body {
   }
 }
 
-.delete-button {
-  background-color: #ff4d4d; /* Raudonas mygtukas ištrynimui */
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  font-family: var(--font-family);
-  cursor: pointer;
-  margin-top: 0.5rem;
-
-  &:hover {
-    background-color: #ff1a1a;
-  }
-
-  @media only screen and (min-width: 768px) {
-    font-size: 1rem; /* Platesniems ekranams didesnis šriftas */
-  }
-}
 

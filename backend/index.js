@@ -1,9 +1,18 @@
 require("dotenv").config();
 const express = require("express");
 const mysql = require("mysql2");
-const sanitizedHtml = require("sanitize-html");
+const sanitizeHtml = require("sanitize-html");
+const cors = require("cors");
+
 const app = express();
 const port = process.env.PORT || 3000;
+
+app.use(cors({ 
+    origin: ["http://127.0.0.1:5173", "http://localhost:5173"],
+    methods: "GET, POST, DELETE",
+    credentials: true
+}));
+
 
 app.use(express.json()); // Kad galėtų priimti JSON duomenis iš POST užklausų
 
